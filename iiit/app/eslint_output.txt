@@ -1,0 +1,19 @@
+[0m[0m
+[0m[4mC:\Users\ANKIT\iiit\app\src\components\radar\Radar.tsx[24m[0m
+[0m   [2m4:10[22m  [31merror[39m  'Player' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m19:9[22m   [31merror[39m  'radarColor' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m83:63[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mC:\Users\ANKIT\iiit\app\src\components\radar\Radar.tsx:83:63[0m
+[0m  81 |               className={clsx('w-3 h-3 rounded-full relative', dotColor)}[0m
+[0m  82 |               animate={{ opacity: [1, 0.4, 1] }}[0m
+[0m> 83 |               transition={{ repeat: Infinity, duration: 1.5 + Math.random() }}[0m
+[0m     |                                                               ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  84 |             >[0m
+[0m  85 |               <div className={clsx('absolute inset-0 rounded-full animate-ping opacity-75', dotColor)} />[0m
+[0m  86 |             </motion.div>  [2mreact-hooks/purity[22m[0m
+[0m[0m
+[0m[31m[1m✖ 3 problems (3 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
