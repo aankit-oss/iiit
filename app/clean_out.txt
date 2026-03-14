@@ -1,0 +1,19 @@
+
+> app@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx(1,1): error TS6133: 'useEffect' is declared but its value is never read.
+src/App.tsx(11,53): error TS2339: Property 'currentScreen' does not exist on type 'GameState'.
+src/App.tsx(20,8): error TS2741: Property 'children' is missing in type '{}' but required in type 'CRTOverlayProps'.
+src/components/controls/ViewToggle.tsx(3,1): error TS6133: 'motion' is declared but its value is never read.
+src/components/controls/ViewToggle.tsx(6,19): error TS2339: Property 'setViewAs' does not exist on type 'GameState'.
+src/components/controls/ViewToggle.tsx(6,30): error TS6133: 'setScreen' is declared but its value is never read.
+src/components/radar/Radar.tsx(4,1): error TS6133: 'Player' is declared but its value is never read.
+src/components/radar/Radar.tsx(4,10): error TS1484: 'Player' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/radar/Radar.tsx(19,9): error TS6133: 'radarColor' is declared but its value is never read.
+src/components/screens/LobbyScreen.tsx(4,1): error TS6133: 'Typewriter' is declared but its value is never read.
+src/components/ui/CRTOverlay.tsx(2,10): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/ui/CRTOverlay.tsx(3,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/ui/GlitchText.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/data/hardcodedPlayers.ts(1,10): error TS1484: 'Player' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/store/gameStore.ts(2,10): error TS1484: 'GameState' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
